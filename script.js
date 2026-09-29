@@ -1300,21 +1300,20 @@ function level10() {
         finishLevel();
 
       } else {
+$("finalAnswer").innerHTML = `
+  <div class="explanation">
 
-        $("finalAnswer").innerHTML = `
-          <div class="explanation">
+    <strong>Correct! 🎯</strong>
 
-            <strong>Correct! 🎯</strong>
+    <button class="primary"
+      onclick="nextFinalQuestion()">
 
-            <button class="primary"
-              onclick="renderQuestion()">
+      NEXT QUESTION →
 
-              NEXT QUESTION →
+    </button>
 
-            </button>
-
-          </div>
-        `;
+  </div>
+`;
 
       }
 
